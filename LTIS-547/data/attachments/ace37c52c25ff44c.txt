@@ -1,0 +1,2 @@
+[1m[31mERROR   [0m root:Testcase_Upload_Financing.py:528 Error: Pesan kesalahan yang diharapkan 'Harap isi nominal pinjaman!' tidak ditemukan. Pesan kesalahan yang ditemukan 'Minimal pinjaman adalah Rp. 100000!'.
+assert 'Harap isi nominal pinjaman!' in 'Minimal pinjaman adalah Rp. 100000!'
