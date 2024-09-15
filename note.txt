@@ -1,0 +1,57 @@
+myenv  : mytest\Scripts\activate    
+
+
+---- allure report -----
+
+run script : pytest <file.py> --alluredir=allure-results
+run report : allure serve allure-results
+
+convert json to html : allure generate allure-results --clean -o allure-report
+
+remove allure report : Remove-Item -Recurse -Force allure-results
+
+
+run per testcase : pytest Testcase_Upload_Financing.py -k "testcase_001 or testcase_032" --alluredir=allure-results
+
+
+
+setup : 
+
+@allure.feature('Validasi Invoice Financing')
+@allure.story('Button Functionality')
+@allure.severity(allure.severity_level.CRITICAL)
+def Testcase_002():
+    browser = setup_browser()
+    try:
+        with allure.step("Login and Verify Button Functionality"):
+            browser.get("https://mekar-test.xyz/pendanaan-koperasi-dashboard")
+            email_field = browser.find_element(By.XPATH, '//*[@id="username"]')
+            inputemail = "agil.luthfi+cekbug01@mekar.id"
+            slow_typing(email_field, inputemail)
+
+            password_field = browser.find_element(By.XPATH, '//*[@id="password"]')
+            input_password = "P@ssw0rd"
+            slow_typing(password_field, input_password)
+
+            login_button = browser.find_element(By.XPATH, '//*[@id="login"]')
+            login_button.click()
+            time.sleep(2)
+
+            # Tambahkan langkah untuk memverifikasi fungsi tombol
+            some_button = browser.find_element(By.XPATH, '//*[@id="someButton"]')
+            some_button.click()
+            time.sleep(2)
+            allure.attach(browser.get_screenshot_as_png(), name="Button Functionality")
+
+    finally:
+        teardown_browser(browser)
+
+
+
+
+git init 
+git add LTIS-547
+git commit -m "validasi financing FE"
+
+git remote add origin https://github.com/testing053/testing053.github.io.git 
+git push -u origin main
