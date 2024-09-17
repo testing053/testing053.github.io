@@ -1,5 +1,0 @@
-[1m[31mERROR   [0m root:Testcase_Upload_Financing.py:1254 Error dalam bunga_*Positif*: Bunga dengan nilai valid seharusnya '6.77', tetapi ditemukan '99,99'.
-assert '99,99' == '6.77'
-  
-  - 6.77
-  + 99,99
