@@ -1,0 +1,1 @@
+Kesalahan saat memvalidasi Nomor UEN Perusahaan: a bytes-like object is required, not 'WebElement'

@@ -1,0 +1,30 @@
+Kesalahan saat memvalidasi RT Perusahaan tidak valid: Message: invalid selector
+from javascript error: {"status":32,"value":"Unable to locate an element with the xpath expression //div[contains(text(),'Mohon masukkan nomor RT yang valid sebanyak 3 angk')]')] because of the following error:\nSyntaxError: Failed to execute 'evaluate' on 'Document': The string '//div[contains(text(),'Mohon masukkan nomor RT yang valid sebanyak 3 angk')]')]' is not a valid XPath expression."}
+  (Session info: chrome=130.0.6723.59); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalid-selector-exception
+Stacktrace:
+	GetHandleVerifier [0x00F93853+24035]
+	(No symbol) [0x00F1BBE4]
+	(No symbol) [0x00DFC2D3]
+	(No symbol) [0x00E01D58]
+	(No symbol) [0x00E035E8]
+	(No symbol) [0x00E03660]
+	(No symbol) [0x00E3D899]
+	(No symbol) [0x00E3DECB]
+	(No symbol) [0x00E7B9D2]
+	(No symbol) [0x00E5FED4]
+	(No symbol) [0x00E7953F]
+	(No symbol) [0x00E5FC26]
+	(No symbol) [0x00E3218C]
+	(No symbol) [0x00E3310D]
+	GetHandleVerifier [0x01239683+2800659]
+	GetHandleVerifier [0x0129423E+3172302]
+	GetHandleVerifier [0x0128CE52+3142626]
+	GetHandleVerifier [0x01036C00+692624]
+	(No symbol) [0x00F24BFD]
+	(No symbol) [0x00F21908]
+	(No symbol) [0x00F21AA0]
+	(No symbol) [0x00F13F50]
+	BaseThreadInitThunk [0x75A97BA9+25]
+	RtlInitializeExceptionChain [0x7792C11B+107]
+	RtlClearBits [0x7792C09F+191]
+

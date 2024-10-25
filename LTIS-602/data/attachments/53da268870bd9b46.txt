@@ -1,0 +1,3 @@
+Kesalahan saat memvalidasi RW Perusahaan tidak valid: Mohon masukkan nomor RW yang valid sebanyak 3 angka!
+assert 'RW harus terdiri dari 3 digit!' in 'Mohon masukkan nomor RW yang valid sebanyak 3 angka!'
+ +  where 'Mohon masukkan nomor RW yang valid sebanyak 3 angka!' = <selenium.webdriver.remote.webelement.WebElement (session="28142477b60ee51ad41011c66c514369", element="f.072D73DDE806BC5CC01805C2E195561D.d.945C1CB4A79E9E6A8806BB3ACD1DE489.e.153")>.text
